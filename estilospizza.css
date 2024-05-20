@@ -1,0 +1,258 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+	background: -webkit-linear-gradient(90deg, #2a2828,#c1121c,#2a2828);background: linear-gradient(90deg, #2a2828,#c1121c,#2a2828);
+}
+
+.contenedorPrincipal{
+  max-width: 2000px;
+  margin: 0;
+}
+.imagenpizza {
+  background-image: url("imagenes/fondopizza.png");
+ height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ .txtpizza{
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+ 
+  transform: translate(-10%, -20%);
+
+ }
+h1{
+font-size:50px;
+color:crimson;
+}
+
+h2{
+font-size:30px;
+color:gold;
+}
+
+
+
+nav{
+    text-align: center;
+    padding: 20px 50px 20px 0;
+	background: -webkit-linear-gradient(90deg, #ff0173,#ff7d4f,#fdff62);background: linear-gradient(90deg, #ff0173,#ff7d4f,#fdff62);
+	width:70%;
+	transform: translate(22%, 10%);
+	border-radius:30px;
+}
+
+
+nav > a{
+    
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 30px;
+	    margin-left: 30px;
+	  display: inline-block;
+	    color: white;
+		font-size:22px;
+		text-shadow: 5px 5px 7px red;
+		
+		transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+	font-weight: bold;
+	transform: scale(0.7);
+        opacity: 0.7;
+	
+}
+
+
+div.pizzabarra {
+  position: relative;
+display: flex;
+justify-content: center;
+ width:100%;
+align-items : center;
+ 
+}
+img.uno{
+	Width:50px;
+	height:50px;
+	margin-left: auto;
+  margin-right: auto;
+   
+}
+img.cubo{
+	margin-left:50%;
+	width:100px;
+	margin-top:30px;
+	
+}
+
+.txtnombre{
+color:white;
+background-color:black;
+text-align:center;
+width:70%;
+	margin-left:18%;
+	border-radius:50%;
+	font-size:50px;
+}
+
+.gifproduct{
+	margin-top:40px;
+	margin-left:35%;
+}
+
+table{
+	table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:white;
+  Width:80%;
+  
+}
+
+table th{
+	background: -webkit-linear-gradient(180deg, #2a57c9,#0d162b);background: linear-gradient(180deg, #2a57c9,#0d162b);
+
+}
+
+table tr{
+text-align:center;
+}
+
+
+.pizzafoto{
+ Width:auto;
+ height:auto;
+}
+
+.estilo1{
+	color:slategrey;
+	font-size:20px;
+	font-family:Century Gothic;
+	background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.estilo2{
+	background: -webkit-linear-gradient(90deg, #c1c1c1,#bfc1c2,#adb0b0);background: linear-gradient(90deg, #c1c1c1,#bfc1c2,#adb0b0);
+}
+
+.ventana{
+background: -webkit-linear-gradient(90deg, #e3d8d2,#a8b4c4,#8092aa);background: linear-gradient(90deg, #e3d8d2,#a8b4c4,#8092aa);
+  width:570px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:-10px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 2s;
+}
+#IrVentanaFlotante:target{
+  opacity:1;
+  pointer-events:auto;
+  
+}
+
+
+#IrVentanaFlotantee:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#IrVentanaFlotante3:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+
+.ventana a img{
+float:right;
+height:30px;
+Width:30px;
+}
+
+.ventana h2{
+	color:darkred;
+	margin-top:30px;
+	margin-right:-30px;
+	letter-spacing: 4px;
+  word-spacing: 7px;
+}
+
+ul li {
+  list-style-image: url("imagenes/pizzalist.png");
+  Width:220px;
+  height:50px;
+  margin-left:180px;
+   font-weight:bold;
+   margin-bottom:30px;
+   font-size:15px;
+}
+
+span{
+	background-color:yellow;
+	color:darkred;
+	font-size:20px;
+	font-weight:bold;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top:10px;
+  margin-bottom:10px;
+  Width:200px;
+  height:50px;
+  font-size:15px;
+  font-weight:bold;
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: darkred;
+  transform: scale(0.9);
+        opacity: 0.8;
+}
+
+button:active {
+  background-color: white;
+  color:red;
+}
+
+#textolink{
+color:white;
+font-weight: bold;
+}
+
+a{
+text-decoration:none;
+}
+
+footer{
+	background-color:black;
+	color:white;
+	font-size:30px;
+	text-align:center;
+}
